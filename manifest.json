@@ -1,0 +1,15 @@
+{
+    "version": "1.1.0",
+    "downloadUrl":
+  "https://github.com/badbuddhatrades/BadBuddhaCustoms/releases/download/v1.1.0/DragDropBracketManager.zip",
+    "published": "2025-01-15",
+    "size": "45 KB",
+    "ntMinBuild": "8.0.0.0",
+    "breakingChanges": false,
+    "notes": "Bug fixes and performance improvements",
+    "changelog": [
+      "Fixed mouse capture issue on high DPI displays",
+      "Improved price calculation accuracy",
+      "Added support for micro futures contracts"
+    ]
+  }
