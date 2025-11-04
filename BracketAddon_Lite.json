@@ -7,8 +7,8 @@
   "releaseNotes": "Initial LITE release - Simplified Version:\n- Fixed 1:2 Risk:Reward ratio (most popular)\n- Drag direction determines which level you're setting (SL or TP)\n- Simple toggle button\n- Visual line preview\n- Auto-disable after placement\n- User-based licensing (Vendor ID: 486)\n\nUpgrade to PRO for:\n- Configurable R:R ratios\n- Hotkeys\n- Real-time overlay\n- Multiple bracket sets\n- Sound alerts\n- Settings window",
   "changelog": [
     {
-      "version": "1.0.0",
-      "date": "2025-10-29",
+      "version": "2.1.0",
+      "date": "2025-11-04",
       "changes": [
         "Initial LITE release",
         "Fixed 1:2 Risk:Reward ratio",
