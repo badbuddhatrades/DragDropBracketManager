@@ -1,38 +1,33 @@
 {
-  "productId": "BadBuddha Drag-Drop Bracket Addon PRO",
-  "version": "1.0.0",
-  "releaseDate": "2025-10-29",
-  "minimumNTVersion": "8.1.6.0",
-  "downloadUrl": "https://github.com/badbuddhatrades/DragDropBracketManager/raw/refs/heads/main/DragDropBracketAddOnPro.zip",
-  "releaseNotes": "Initial PRO release with advanced features:\n- Configurable Risk:Reward ratios (1:1, 1:2, 1:3, 2:1, 3:1, custom)\n- Drag direction determines which level you're setting (SL or TP)\n- Hotkeys: Toggle tool (Ctrl+Shift+B), Cycle R:R (Ctrl+Shift+R)\n- Real-time visual overlay showing R:R, SL, TP during drag\n- Multiple bracket sets for position scaling\n- Sound alerts for successful placement and errors\n- Comprehensive settings window\n- Debug logging to file",
+  "version": "v2.2.1.0",
+  "notes": "Fixed Newtonsoft.Json dependency - now uses built-in .NET serialization.",
+  "downloadUrl": "https://github.com/badbuddhatrades/DragDropBracketManager",
+  "published": "2025-11-04",
+  "author": "BadBuddhaCustoms",
+  "breakingChanges": false,
   "changelog": [
-    {
-      "version": "1.0.0",
-      "date": "2025-10-29",
-      "changes": [
-        "Initial PRO release",
-        "Added configurable R:R ratios with presets and custom values",
-        "Implemented drag direction logic (down for SL, up for TP)",
-        "Added hotkey support for toggle and R:R cycling",
-        "Created real-time drag overlay with price calculations",
-        "Added multiple bracket sets for position scaling",
-        "Implemented sound alerts",
-        "Built comprehensive settings window with tabs",
-        "Added debug logging to custom log file",
-        "User-based licensing support"
-      ]
-    }
-  ],
-  "features": [
-    "Configurable Risk:Reward ratios",
-    "Hotkey support",
-    "Real-time visual overlay",
-    "Multiple bracket sets (position scaling)",
-    "Sound alerts",
-    "Comprehensive settings window",
-    "Debug logging"
-  ],
-  "requirements": {
-    "ninjaTrader": "8.1.6.0 or higher"
-      }
+    "Removed external Newtonsoft.Json dependency for maximum compatibility",
+    "Switched to JavaScriptSerializer with manual enum handling (no external dependencies)",
+    "Fixed settings persistence using built-in .NET Framework serialization",
+    "Fixed bracket scaling to always have 4 sets at 25% each by default",
+    "Fixed duplicate R:R ratios in dropdown menus",
+    "Improved enum serialization for hotkeys (saves as readable strings)",
+    "Added 2 fully configurable breakeven buttons (BE+1, BE+2)",
+    "Each breakeven button can be enabled/disabled independently in settings",
+    "Each breakeven button supports custom tick values",
+    "Added configurable trailing stop feature with custom tick distance",
+    "Trailing stop tracks highest/lowest price and moves stops automatically",
+    "Trailing stop only moves in favorable direction (never against position)",
+    "Trailing stop auto-disables when position closes",
+    "Added new 'Breakeven & Trailing' tab in Settings window",
+    "Visual feedback with color changes (green when active)",
+    "Settings persist across sessions and reboots via JSON file",
+    "Comprehensive tooltips and help text",
+    "Configurable Risk:Reward ratios (1:1, 1:2, 1:3, 2:1, 3:1, custom)",
+    "Hotkeys: Ctrl+Shift+B (toggle), Ctrl+Shift+R (cycle R:R)",
+    "Real-time visual overlay showing R:R, SL, TP during drag",
+    "Exactly 4 bracket sets for position scaling (must total 100%)",
+    "Sound alerts for successful placement and errors",
+    "Debug logging to file"
+  ]
 }
