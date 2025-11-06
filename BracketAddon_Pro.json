@@ -1,5 +1,5 @@
 {
-  "version": "v2.2.1.0",
+  "version": "v2.2.0.0",
   "notes": "Fixed Newtonsoft.Json dependency - now uses built-in .NET serialization.",
   "downloadUrl": "https://github.com/badbuddhatrades/DragDropBracketManager",
   "published": "2025-11-04",
