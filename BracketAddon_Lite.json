@@ -7,16 +7,13 @@
   "releaseNotes": "Initial LITE release - Simplified Version:\n- Fixed 1:2 Risk:Reward ratio (most popular)\n- Drag direction determines which level you're setting (SL or TP)\n- Simple toggle button\n- Visual line preview\n- Auto-disable after placement\n- User-based licensing (Vendor ID: 486)\n\nUpgrade to PRO for:\n- Configurable R:R ratios\n- Hotkeys\n- Real-time overlay\n- Multiple bracket sets\n- Sound alerts\n- Settings window",
   "changelog": [
     {
-      "version": "2.1.0",
-      "date": "2025-11-04",
+      "version": "2.3.0",
+      "date": "2025-11-06",
       "changes": [
-        "Initial LITE release",
+        "Bug fix for non-placing orders",
         "Fixed 1:2 Risk:Reward ratio",
         "Drag direction logic (down for SL, up for TP)",
-        "Simple toggle button",
-        "Visual preview line while dragging",
-        "Auto-disable after order placement",
-        "Automatic update checking (weekly)"
+        "added logging to NinjaTrader 8 folder (clears on restart)"
       ]
     }
   ],
@@ -24,8 +21,7 @@
     "Fixed 1:2 R:R ratio",
     "Drag direction logic",
     "Visual preview",
-    "Simple toggle",
-    "User-based license"
+    "Simple toggle"
   ],
   "requirements": {
     "ninjaTrader": "8.1.6.0 or higher",
