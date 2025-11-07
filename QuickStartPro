@@ -1,0 +1,451 @@
+# Bracket Manager PRO - Quick Start
+
+**Get trading in 5 minutes!** | Professional Version
+
+---
+
+## What is PRO?
+
+PRO is the **professional version** with:
+- ✅ Multiple Risk:Reward ratios (1:1, 1:2, 1:3, 2:1, 3:1, Custom)
+- ✅ Drag-and-drop interface with real-time overlay
+- ✅ Hotkeys (Ctrl+Shift+B toggle, Ctrl+Shift+R cycle ratios)
+- ✅ Position scaling (multiple bracket sets)
+- ✅ Breakeven buttons (2 configurable)
+- ✅ Configurable trailing stop
+- ✅ Sound alerts
+- ✅ Full settings window
+- ✅ User-based license (Vendor ID: 492)
+
+**Want simpler?** LITE version offers fixed 1:2 ratio with no configuration needed!
+
+---
+
+## Installation (30 seconds)
+
+1. Open NinjaTrader 8
+2. **Control Center → Tools → Import → NinjaScript Add-On**
+3. Select the PRO \`.zip\` file → **Import**
+4. Press **F5** (Compile)
+5. **Restart NinjaTrader**
+
+Done! ✓
+
+---
+
+## First Trade (90 seconds)
+
+### Step 1: Setup
+- Open any chart
+- Press **Ctrl+T** to enable Chart Trader
+- Look for **"Bracket PRO: OFF (1:2)"** button at bottom
+- Note the **⚙** settings button next to it
+
+### Step 2: Enter Position
+- Use Chart Trader to go Long or Short
+- Must have active position for tool to work
+
+### Step 3: Place Brackets
+1. **Activate**: Press **Ctrl+Shift+B** or click button → turns green "ON"
+2. **Drag on chart**:
+   - **LONG**: Drag DOWN for SL (TP auto-calculates) or UP for TP (SL auto-calculates)
+   - **SHORT**: Drag UP for SL (TP auto-calculates) or DOWN for TP (SL auto-calculates)
+3. Watch **real-time overlay** showing R:R, Entry, SL, TP as you drag
+4. **Release** → Orders submit immediately
+
+Tool automatically turns OFF after placing orders.
+
+---
+
+## Position Management (NEW in v2.2.0)
+
+After placing your brackets, you have **three powerful buttons** for managing your position:
+
+### BE +X Buttons (2 Configurable)
+- **What they do**: Move your stop loss to **breakeven + X ticks**
+- **Default config**: Customizable in settings (e.g., BE+1 and BE+5)
+- **When to use**: Lock in profits once price moves in your favor
+- **How it works**: Click button → Stop moves to entry price + X ticks instantly
+- **Example**: Long ES @ 4500 → Price reaches 4515 → Click BE+1 → Stop moves to 4500.25
+
+**Customize in Settings**: Click **⚙** → Position Management tab → Change tick values or disable either button.
+
+### Trail X Button (Configurable)
+- **What it does**: Enables a **X-tick trailing stop** that follows price
+- **Default config**: Customizable in settings (e.g., 10 ticks)
+- **When to use**: Let winners run while protecting gains
+- **How it works**:
+  - Click button (turns green when active)
+  - **LONG**: Stop moves UP as price rises (stays X ticks below highest price)
+  - **SHORT**: Stop moves DOWN as price falls (stays X ticks above lowest price)
+  - Stop ONLY moves in favorable direction (never worse)
+  - Auto-disables when position closes
+- **Example**:
+  - Long ES @ 4500, Trail 10 enabled
+  - Price rises to 4530 → Stop moves to 4520 (10 ticks below)
+  - Price drops to 4525 → Stop stays at 4520 (doesn't move down!)
+  - Stopped out at 4520 for +20 point profit
+
+**Customize in Settings**: Click **⚙** → Position Management tab → Change trailing tick amount or disable the feature.
+
+**Pro Tip**: Combine these tools! Use BE+1 early, then enable trailing stop when you have more profit cushion.
+
+---
+
+## Real-Time Overlay (PRO Feature)
+
+As you drag, you'll see an overlay showing:
+```
+R:R: 1:2
+Entry: 4500.00
+→ SL: 4490.00 (-10.00)
+  TP: 4520.00 (+20.00)
+```
+
+- **→** arrow shows which level you're currently setting
+- **Position**: Top Right, Top Left, or Follow Mouse (configurable in settings)
+- **Toggle**: Enable/disable in Settings → Display tab
+
+---
+
+## Hotkeys (PRO Feature)
+
+| Action | Hotkey | Description |
+|--------|--------|-------------|
+| Toggle tool on/off | **Ctrl+Shift+B** | Enable/disable bracket tool |
+| Cycle R:R ratios | **Ctrl+Shift+R** | Switch between ratios |
+
+**Cycle Order**: 1:1 → 1:2 → 1:3 → 2:1 → 3:1 → Custom → (repeat)
+
+When you cycle ratios, you'll see:
+- Toast notification showing new ratio
+- Button updates to show current ratio
+- Sound alert (if enabled)
+
+---
+
+## Example: Long at ES 4500
+
+You're **long ES at 4500** and want to set brackets with 1:2 ratio:
+
+**Method 1 - Drag to set Stop Loss**:
+- Press **Ctrl+Shift+B** (button turns green)
+- Drag DOWN to 4490
+- Overlay shows: R:R 1:2, SL 4490, TP 4520
+- Release
+- ✓ Result: SL @ 4490, TP @ 4520 (10 risk, 20 reward)
+
+**Method 2 - Drag to set Take Profit**:
+- Press **Ctrl+Shift+B** (button turns green)
+- Drag UP to 4520
+- Overlay shows: R:R 1:2, SL 4490, TP 4520
+- Release
+- ✓ Result: SL @ 4490, TP @ 4520 (10 risk, 20 reward)
+
+**Both methods work!** The overlay confirms prices before you release.
+
+---
+
+## Risk:Reward Ratios
+
+PRO offers 6 preset ratios plus custom:
+
+| Ratio | Meaning | Example | Best For |
+|-------|---------|---------|----------|
+| **1:1** | Equal risk/reward | Risk \$10, Make \$10 | Conservative, breakeven exits, scalping |
+| **1:2** | Risk 1 to make 2 | Risk \$10, Make \$20 | **Most popular**, balanced approach |
+| **1:3** | Risk 1 to make 3 | Risk \$10, Make \$30 | Aggressive, let winners run |
+| **2:1** | Risk 2 to make 1 | Risk \$20, Make \$10 | Scalping with wider stops |
+| **3:1** | Risk 3 to make 1 | Risk \$30, Make \$10 | Quick scalps, high win rate strategies |
+| **Custom** | Your choice | Risk 1, Make 2.5 | Specific strategies requiring exact ratios |
+
+**Switch ratios instantly**: Press **Ctrl+Shift+R** to cycle through all ratios!
+
+**Recommended starting point**: **1:2 ratio**
+
+---
+
+## Position Scaling (Advanced)
+
+Want to scale out of positions with **one drag**? Enable **Multiple Bracket Sets**:
+
+### How It Works
+1. Click **⚙** → **Bracket Sets** tab
+2. Check **"Enable Multiple Bracket Sets"**
+3. Configure your splits:
+   ```
+   50% @ 1:1 ratio  ← Lock in early profit
+   30% @ 1:2 ratio  ← Main target
+   20% @ 1:3 ratio  ← Let it run
+   ```
+4. Click **Save**
+
+Now when you drag, **one motion creates all three bracket sets** automatically!
+
+### Example
+- Long 10 contracts ES @ 4500
+- Drag to set risk at 10 points
+- Tool places:
+  - 5 contracts: SL @ 4490, TP @ 4510 (1:1)
+  - 3 contracts: SL @ 4490, TP @ 4520 (1:2)
+  - 2 contracts: SL @ 4490, TP @ 4530 (1:3)
+
+**Important**: All sets share the SAME Stop Loss for full position protection.
+
+**Benefits**:
+- Lock in profits early while letting some run
+- Reduce stress by securing gains
+- Professional money management
+
+---
+
+## Settings Window (⚙ Button)
+
+Click the **⚙** gear button to access full configuration:
+
+### Risk/Reward Tab
+- Select default R:R ratio (1:1, 1:2, 1:3, 2:1, 3:1, Custom)
+- Configure custom ratio values
+- Current setting shows on main button
+
+### Bracket Sets Tab
+- Enable/disable position scaling
+- Configure percentage splits for each bracket set
+- Assign R:R ratio to each set
+- Preview allocation before trading
+
+### Display Tab
+- Toggle drag overlay on/off
+- Choose overlay position (Top Right, Top Left, Follow Mouse)
+- Adjust visual preferences
+
+### Position Management Tab (NEW)
+- **Breakeven Buttons**:
+  - Enable/disable each button (Button 1 and Button 2)
+  - Configure tick offsets (e.g., BE+1, BE+5, or any custom value)
+  - Set visibility preferences
+- **Trailing Stop**:
+  - Enable/disable trailing stop feature
+  - Configure trailing tick amount (5, 10, 15, 20, or custom)
+  - Adjust update frequency
+
+### Audio Tab
+- Enable/disable sound alerts
+- Adjust volume
+- Sounds for: success, error, cycle ratio
+
+### Advanced Tab
+- Enable debug logging (troubleshooting only)
+- View log file location
+- Log file: \`Documents\NinjaTrader 8\logs\BracketPRO_Debug.log\`
+
+**Important**: Always click **Save** to persist your settings!
+
+---
+
+## Quick Reference
+
+### Main Toggle Button States
+- **Red "OFF (1:2)"** → Tool disabled, current ratio shown
+- **Green "ON (1:2)"** → Tool active, ready to place brackets
+- **(X:Y)** → Current ratio (changes when you cycle)
+
+### Position Management Buttons
+- **BE +X** (Gray) → Click to move stop to breakeven + X ticks (configurable)
+- **BE +Y** (Gray) → Click to move stop to breakeven + Y ticks (configurable)
+- **Trail Z** (Brown/Green) → Click to enable Z-tick trailing stop
+  - Brown = Inactive
+  - Green = Actively trailing
+  - Auto-disables when position closes
+
+### Drag Directions
+
+**LONG Positions**:
+- Drag DOWN → Sets Stop Loss (TP calculated by R:R)
+- Drag UP → Sets Take Profit (SL calculated by R:R)
+
+**SHORT Positions**:
+- Drag UP → Sets Stop Loss (TP calculated by R:R)
+- Drag DOWN → Sets Take Profit (SL calculated by R:R)
+
+### Visual Cues
+- **Yellow dashed line** → Shows your drag level in real-time
+- **Overlay box** → Shows R:R, Entry, SL, TP with → arrow indicating which you're setting
+
+### Hotkeys
+- **Ctrl+Shift+B** → Toggle tool on/off
+- **Ctrl+Shift+R** → Cycle through R:R ratios
+
+---
+
+## Common Questions
+
+**Q: Nothing happens when I drag?**
+- ✓ Is button GREEN (ON)?
+- ✓ Do you have an active position?
+- ✓ Are you dragging in the price area (not indicator panel)?
+
+**Q: How do I change the R:R ratio?**
+- Press **Ctrl+Shift+R** to cycle, or click **⚙** → Risk/Reward tab
+
+**Q: Can I customize the R:R ratios?**
+- Yes! Click **⚙** → Risk/Reward tab → Select "Custom" → Enter your values
+
+**Q: How do I enable position scaling?**
+- Click **⚙** → Bracket Sets tab → Check "Enable Multiple Bracket Sets"
+
+**Q: Where's the overlay?**
+- Make sure it's enabled: **⚙** → Display tab → Check "Show Drag Overlay"
+- Try different positions (Top Right, Top Left, Follow Mouse)
+
+**Q: Can I change hotkeys?**
+- Not currently - hotkeys are fixed to Ctrl+Shift+B and Ctrl+Shift+R
+
+**Q: Does PRO require a license?**
+- Yes, PRO requires a user-based license (Vendor ID: 492) tied to your NinjaTrader account.
+
+**Q: Can I customize the breakeven button tick values?**
+- Yes! Click **⚙** → Position Management tab → Configure BE Button 1 and BE Button 2 tick values (any positive integer)
+
+**Q: Can I change the trailing stop tick amount?**
+- Yes! Click **⚙** → Position Management tab → Set trailing stop ticks (common values: 5, 10, 15, 20, or custom)
+
+**Q: Can I disable the breakeven or trailing stop buttons?**
+- Yes! Click **⚙** → Position Management tab → Uncheck "Enable" for any button you don't want to see
+
+**Q: Do the position management features work on Sim accounts?**
+- Yes! All features (breakeven, trailing stop) work on both Sim and Live accounts.
+
+---
+
+## Tips for Success
+
+### Before Trading Live
+1. ✓ Test in **Sim account** first
+2. ✓ Practice Long and Short drag directions
+3. ✓ Try all R:R ratios to find your preference
+4. ✓ Experiment with bracket sets on small positions
+5. ✓ Test breakeven and trailing stop features
+6. ✓ Get comfortable with hotkeys (saves time!)
+
+### During Trading
+1. ✓ Plan your trade first (know your risk level)
+2. ✓ Enter position, then immediately set brackets
+3. ✓ Watch overlay to confirm prices before releasing
+4. ✓ Use **Ctrl+Shift+R** to quickly change ratios between trades
+5. ✓ Keep tool OFF when not actively placing brackets
+6. ✓ Use breakeven buttons to lock in profits as price moves
+7. ✓ Enable trailing stop to let winners run
+
+### Best Practices
+- **Start simple**: Use single brackets with 1:2 ratio first
+- **Master hotkeys**: Ctrl+Shift+B and Ctrl+Shift+R become second nature
+- **One drag per position**: Don't place multiple brackets (creates duplicates)
+- **Verify account**: Always check Chart Trader shows correct account
+- **Overlay is your friend**: Confirm prices before releasing
+- **Disable debug logging**: Only enable when troubleshooting
+- **Save settings**: Always click Save in settings window
+- **Breakeven early**: Use BE+1 as soon as price moves in your favor
+- **Trail profits**: Enable trailing stop once you have good profit cushion
+
+---
+
+## Troubleshooting
+
+### "Nothing happens when I drag"
+- ✓ Is the tool ON? (button shows green)
+- ✓ Do you have an active position?
+- ✓ Are you dragging in the price area (not indicator panel)?
+
+### "Orders didn't place"
+- ✓ Check you have an account selected in Chart Trader
+- ✓ Verify drag direction matches position type
+- ✓ Enable debug logging: **⚙** → Advanced → Check "Enable Debug Logging"
+- ✓ Check log file: \`Documents\NinjaTrader 8\logs\BracketPRO_Debug.log\`
+
+### "Overlay not showing"
+- ✓ Go to Settings → Display → Check "Show Drag Overlay"
+- ✓ Try different overlay positions (Top Right, Top Left, Follow Mouse)
+- ✓ Make sure you're actively dragging (not just hovering)
+
+### "Settings don't save"
+- ✓ Click the **Save** button (not Cancel or X)
+- ✓ Restart NinjaTrader to ensure persistence
+
+### "Hotkeys not working"
+- ✓ Make sure Chart Trader is open (Ctrl+T)
+- ✓ Click on the chart to give it focus
+- ✓ Restart NinjaTrader if needed
+
+### "Breakeven buttons not working"
+- ✓ Make sure you have active position
+- ✓ Verify you have stop orders placed
+- ✓ Check debug log for errors
+- ✓ Ensure buttons are enabled in settings
+
+### "Trailing stop not following price"
+- ✓ Verify button shows green (active state)
+- ✓ Check price is actually moving in favorable direction
+- ✓ Trailing stop only moves when price reaches new high/low
+- ✓ Enable debug logging to see trailing stop updates
+
+### "Wrong prices calculated"
+- ✓ Check your current R:R ratio (shown on button)
+- ✓ Press Ctrl+Shift+R if you want different ratio
+- ✓ Watch overlay to confirm calculations before releasing
+- ✓ Verify entry price in Chart Trader matches expectation
+
+---
+
+## LITE vs PRO Feature Comparison
+
+| Feature | LITE | PRO |
+|---------|------|-----|
+| **Drag-and-drop interface** | ✅ | ✅ |
+| **Risk:Reward ratios** | Fixed 1:2 | 6 presets + custom |
+| **Real-time overlay** | ❌ | ✅ |
+| **Hotkeys** | ❌ | ✅ (2 hotkeys) |
+| **Position scaling** | ❌ | ✅ (unlimited sets) |
+| **Breakeven buttons** | Fixed: BE+1, BE+5 | ✅ (2 configurable) |
+| **Trailing stop** | Fixed: 10 ticks | ✅ (configurable ticks) |
+| **Sound alerts** | ❌ | ✅ |
+| **Settings window** | ❌ | ✅ (5 tabs) |
+| **Visual feedback** | Yellow line only | Yellow line + overlay |
+| **License type** | User-based (486) | User-based (492) |
+| **Best for** | Simple 1:2 trading | Professional traders, multiple strategies |
+
+---
+
+## Need Help?
+
+📖 **Full User Guide**: See \`USERGUIDE_PRO.md\` for complete documentation
+
+🐛 **Troubleshooting**: Enable debug logging in Advanced settings
+- Log file: \`Documents\NinjaTrader 8\logs\BracketPRO_Debug.log\`
+
+✉️ **Support**: support@badbuddhatrades.com
+
+🌐 **Website**: https://badbuddhatrades.com
+
+💻 **GitHub**: https://github.com/badbuddhatrades/BadBuddhaCustoms
+
+---
+
+## Next Steps
+
+1. ✓ Practice in Sim account
+2. ✓ Try both drag methods (setting SL vs setting TP)
+3. ✓ Experiment with different R:R ratios (Ctrl+Shift+R)
+4. ✓ Master the hotkeys for faster workflow
+5. ✓ Test position scaling with small size
+6. ✓ Configure breakeven and trailing stop to your preferences
+7. ✓ Customize settings to match your trading style
+8. ✓ Enable overlay to build confidence before releasing
+
+**Happy trading!** 🎯
+
+---
+
+**Support**: support@badbuddhatrades.com | **Website**: https://badbuddhatrades.com
+
+**Version**: 2.2.0 | **© 2025 BadBuddha Trades**
