@@ -13,7 +13,7 @@ LITE is the **simplified version** with:
 - ✅ Breakeven buttons (BE+1, BE+5) **NEW in v2.3.0**
 - ✅ 10-tick trailing stop **NEW in v2.3.0**
 - ✅ No configuration needed
-- ✅ User-based license (Vendor ID: 486)
+- ✅ User-based license
 
 **Want more?** Upgrade to PRO for custom ratios, hotkeys, overlay, scaling, and more!
 
@@ -180,7 +180,7 @@ LITE uses a **fixed 1:2** risk:reward ratio:
 - LITE has no settings (keeps it simple!). PRO has a full settings window with 5 tabs.
 
 **Q: Does LITE require a license?**
-- Yes, LITE requires a user-based license (Vendor ID: 486) tied to your NinjaTrader account.
+- Yes, LITE requires a user-based license tied to your NinjaTrader account.
 
 **Q: When should I use BE+1 vs BE+5?**
 - Use BE+1 early when price just starts moving in your favor (more conservative)
@@ -343,4 +343,4 @@ Full control over everything:
 
 **Support**: support@badbuddhatrades.com | **Website**: https://badbuddhatrades.com
 
-**Version**: 2.3.0 | **© 2025 BadBuddha Trades**
+**Version**: 2.3.0 | **© 2025 BadBuddha Customs LLC**

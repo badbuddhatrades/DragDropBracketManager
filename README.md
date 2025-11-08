@@ -138,7 +138,7 @@ Both methods give the same result - choose whichever feels more natural!
 
 ### PRO Version
 
-1. Purchase PRO license from BadBuddha Trades
+1. Purchase PRO license from BadBuddha Customs LLC
 2. Download the PRO `.zip` file
 3. If you have LITE installed: **Tools → Remove NinjaScript Assembly → Select LITE → Remove**
 4. Follow steps 2-7 from LITE installation above
@@ -264,7 +264,7 @@ You may NOT:
 
 ---
 
-## About BadBuddha Trades
+## About BadBuddha Customs LLC
 
 We build practical trading tools for real traders. Our philosophy:
 - **Simple workflows** that don't slow you down
@@ -323,4 +323,4 @@ Ready for more control? PRO gives you:
 
 **Thank you for using Drag-Drop Bracket Manager!**
 
-*© 2025 BadBuddha Trades | User-Based Licensing Available*
+*© 2025 BadBuddha Customs LLC | User-Based Licensing Available*
