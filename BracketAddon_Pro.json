@@ -1,11 +1,12 @@
 {
-  "version": "v2.2.0.0",
+  "version": "v2.3.0.0",
   "notes": "Fixed Newtonsoft.Json dependency - now uses built-in .NET serialization.",
   "downloadUrl": "https://github.com/badbuddhatrades/DragDropBracketManager",
   "published": "2025-11-04",
   "author": "BadBuddhaCustoms",
   "breakingChanges": false,
   "changelog": [
+    "Added ability to set custom risk reward",
     "Removed external Newtonsoft.Json dependency for maximum compatibility",
     "Switched to JavaScriptSerializer with manual enum handling (no external dependencies)",
     "Fixed settings persistence using built-in .NET Framework serialization",
