@@ -316,7 +316,10 @@ Ready for more control? PRO gives you:
 - Position scaling capabilities
 - Professional-grade features
 
-**Download:** https://github.com/badbuddhatrades/DragDropBracketManager
+**Download Lite:** [https://github.com/badbuddhatrades/DragDropBracketManager](https://github.com/badbuddhatrades/DragDropBracketManager/raw/refs/heads/main/DragDropBracketAddOnLite.zip)
+
+**Download Pro:** [https://github.com/badbuddhacustoms/DragDropBracketManager](https://github.com/badbuddhatrades/DragDropBracketManager/raw/refs/heads/main/DragDropBracketAddonProv2.3.zip)
+
 **Purchase PRO:** https://badbuddhatrades.com
 
 ---
