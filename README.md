@@ -277,30 +277,6 @@ Visit https://badbuddhatrades.com to explore our other NinjaTrader addons and tr
 
 ---
 
-## Changelog
-
-### LITE v1.0.0 (2025-10-29)
-- Initial LITE release
-- Fixed 1:2 Risk:Reward ratio
-- Drag direction logic (down for SL, up for TP)
-- Simple toggle button
-- Visual preview line while dragging
-- Auto-disable after order placement
-- Weekly automatic update checking
-
-### PRO v1.0.0 (2025-10-29)
-- Initial PRO release
-- Configurable R:R ratios with 6 presets + custom
-- Hotkey support: Toggle (Ctrl+Shift+B), Cycle R:R (Ctrl+Shift+R)
-- Real-time visual overlay with price calculations
-- Multiple bracket sets for position scaling
-- Sound alerts (success/error/cycle)
-- Comprehensive settings window with 5 tabs
-- Debug logging to file
-- Daily automatic update checking
-
----
-
 ## Get Started Today
 
 ### Try LITE (Free)
