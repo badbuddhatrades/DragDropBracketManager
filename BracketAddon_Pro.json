@@ -8,7 +8,7 @@
   "changelog": [
     "Bugfix on price/tick validation",
     "Update to include using on multiple tabs",
-    "Updated drawing of PT/SL lines",
+    "Updated drawing of PT/SL lines"
 
   ]
 }
