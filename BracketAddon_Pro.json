@@ -1,11 +1,12 @@
 {
- "version": "v4.0.0.0",
+ "version": "v4.1.0.0",
   "notes": "Fixed bugs and new features added",
   "downloadUrl": "https://github.com/badbuddhatrades/DragDropBracketManager/raw/refs/heads/main/DragDropBracketAddonPro_v4.zip",
   "published": "2025-12-19",
   "author": "BadBuddhaCustoms",
   "breakingChanges": false,
   "changelog": [
+    "Mior Bugfix with unhandle exception",
     "Mutli-Tab Support",
     "Changed to always on, Shift+Drag to set order",
     "Updated drawing of PT/SL lines"
